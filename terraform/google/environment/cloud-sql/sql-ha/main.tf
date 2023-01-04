@@ -6,20 +6,20 @@
 # CONFIGURE OUR GCP CONNECTION
 # ------------------------------------------------------------------------------
 
-provider "google-beta" {
-  project = "rds-rnd-project"
-  region  = "asia-southeast1"
-}
+# provider "google-beta" {
+#   project = "rds-rnd-project"
+#   region  = "asia-southeast1"
+# }
 
 terraform {
   required_version = ">= 0.12.26"
 
-  required_providers {
-    google-beta = {
-      source  = "hashicorp/google-beta"
-      version = "~> 3.57.0"
-    }
-  }
+  # required_providers {
+  #   google-beta = {
+  #     source  = "hashicorp/google-beta"
+  #     version = "~> 3.57.0"
+  #   }
+  # }
 }
 
 # ------------------------------------------------------------------------------
